@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech2etc Ecommerce Tutorial</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section id="header">
+            <a href="#"><img src="img/Me/Moaaz_Ehab_no_background.1.png" class="logo" alt=""></a>
+
+            <div>
+                <ul id="navbar">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a class="active" href="shop.html">Shop</a></li>
+                     <li><a href="blog.html">Blog</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                     <li class="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                     <a href="#" id="close"><i class="far fa-times"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+
+        </section>
+
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="img/products/f2.jpg" width="100%" id="MainImg" alt="">
+                <div class="small-img-group">
+                </div>
+            </div>
+            <div class="single-pro-details">
+                <h6>Home / T-Shirt</h6>
+                <h4>Product Details</h4>
+                <span>Elevate your wardrobe with our Classic Cotton T-Shirt.
+                    Crafted from 100% pure cotton,this shirt provides unbeatable softness and comfort.
+                    Its breathable fabric is perfect for year-round wear, making it an essential for any occasion.
+                    Available in a variety of stylish colors and sizes, it offers a relaxed fit that flatters every body type.
+                    Easy to care for and ideal for daily wear, casual outings,or layering under a jacket, this T-shirt is a versatile must-have.
+                </span>
+            </div>
+        </section>
+
+            
+        </footer>
+
+        <script>
+            var MainImg = document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick = function(){
+                MainImg.src = smallimg[0].src;
+            }
+
+            smallimg[1].onclick = function(){
+                MainImg.src = smallimg[1].src;
+            }
+
+            smallimg[2].onclick = function(){
+                MainImg.src = smallimg[2].src;
+            }
+
+            smallimg[3].onclick = function(){
+                MainImg.src = smallimg[3].src;
+            }
+        </script>
+
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
